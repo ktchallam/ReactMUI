@@ -1,0 +1,46 @@
+/* src/components/ProgressBar.css */
+
+.progress-bar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Space between elements */
+}
+
+.progress-bar-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.progress-bar-container {
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the filler stays within the rounded corners */
+}
+
+.progress-bar-filler {
+  height: 100%;
+  background-color: #007bff; /* A nice blue color */
+  border-radius: 10px;
+  /* Smooth transition for the width property */
+  transition: width 0.4s ease-in-out; 
+}
+
+.progress-bar-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.progress-bar-message {
+  font-style: italic;
+}
+
+.progress-bar-percentage {
+  font-weight: bold;
+}
