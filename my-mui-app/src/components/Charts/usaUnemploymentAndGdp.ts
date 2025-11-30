@@ -1,0 +1,16 @@
+export const usaUnemploymentAndGdp = [
+  { date: new Date('2022-01-01'), unemploymentRate: 4, gdpPerCapita: 75719.0 , imgirationRate: 4.5},
+  { date: new Date('2022-04-01'), unemploymentRate: 3.7, gdpPerCapita: 77434.0 , imgirationRate: 4.5 },
+  { date: new Date('2022-07-01'), unemploymentRate: 4, gdpPerCapita: 78697.0 , imgirationRate: 4 },
+  { date: new Date('2022-10-01'), unemploymentRate: 3.6, gdpPerCapita: 79821.0 , imgirationRate: 4 },
+  { date: new Date('2023-01-01'), unemploymentRate: 4, gdpPerCapita: 80997.0 , imgirationRate: 4 },
+  { date: new Date('2023-04-01'), unemploymentRate: 3.4, gdpPerCapita: 81768.0 , imgirationRate: 6 },
+  { date: new Date('2023-07-01'), unemploymentRate: 4, gdpPerCapita: 83185.0 , imgirationRate: 4 },
+  { date: new Date('2023-10-01'), unemploymentRate: 3.9, gdpPerCapita: 84007.0 , imgirationRate: 5.5 },
+  { date: new Date('2024-01-01'), unemploymentRate: 3.7, gdpPerCapita: 84655.0 , imgirationRate: 4 },
+  { date: new Date('2024-04-01'), unemploymentRate: 3.9, gdpPerCapita: 85744.0 , imgirationRate: 4 },
+  { date: new Date('2024-07-01'), unemploymentRate: 4.2, gdpPerCapita: 86637.0 , imgirationRate: 4 },
+  { date: new Date('2024-10-01'), unemploymentRate: 4.1, gdpPerCapita: 87422.0 , imgirationRate: 4 },
+  { date: new Date('2025-01-01'), unemploymentRate: 4, gdpPerCapita: 87948.0 , imgirationRate: 5 },
+  { date: new Date('2025-04-01'), unemploymentRate: 4.2, gdpPerCapita: 89131.0 , imgirationRate: 6 },
+];

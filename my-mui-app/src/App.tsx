@@ -5,6 +5,7 @@ import theme from './theme';
 import Header from './components/Header';
 import {ProgressBar} from './components/ProgressBar/ProgressBar'; 
 import Footer from './components/Footer';
+import LineOverview from './components/Charts/Linechart';
 
 const statusMessages = [
   { threshold: 0, message: 'Initiating process...' },
@@ -48,14 +49,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
-      <h1>Dynamic Progress Bar</h1>
-        <div className="progress-container">
-          <ProgressBar
-            progress={progress}
-            messages={statusMessages}
-            label="File Upload"
-          />
-        </div>
+      <LineOverview />
       <Footer />
     </ThemeProvider>
   );
