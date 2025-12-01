@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider as MUIThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 import Header from './components/Header';
 import {ProgressBar} from './components/ProgressBar/ProgressBar'; 
 import Footer from './components/Footer';
 import LineOverview from './components/Charts/Linechart';
+import Dashboard from './components/Dashboard/Dashboard';
+import { ThemeProvider } from './context/ThemeContext';
 
 const statusMessages = [
   { threshold: 0, message: 'Initiating process...' },
@@ -46,11 +48,13 @@ function App() {
 
 // const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Header />
-      <LineOverview />
-      <Footer />
+    <ThemeProvider>
+      <MUIThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <Dashboard />
+        <Footer />
+      </MUIThemeProvider>
     </ThemeProvider>
   );
 };

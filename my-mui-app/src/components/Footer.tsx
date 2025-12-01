@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         color: theme.palette.common.white,
         padding: theme.spacing(4, 2),
         marginTop: 'auto',
-        position: 'fixed',
+        position: 'flexible',
         bottom: 0,
         left: 0,
         right: 0,
